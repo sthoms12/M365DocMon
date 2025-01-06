@@ -8,7 +8,7 @@
     "build": "next build",
     "worker:build": "tsc",
     "start": "next start",
-    "deploy": "npm run pages:build && wrangler pages deploy .next",
+    "deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
     "worker:deploy": "wrangler deploy",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
