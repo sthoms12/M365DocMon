@@ -8,7 +8,7 @@
     "build": "next build",
     "worker:build": "tsc",
     "start": "next start",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run pages:build && wrangler pages deploy .next",
     "worker:deploy": "wrangler deploy",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
@@ -45,7 +45,13 @@
   },
   "description": "M365 Documentation Monitor - Tracking Microsoft 365 Documentation Changes",
   "main": "index.js",
-  "keywords": ["microsoft 365", "documentation", "monitoring", "next.js", "cloudflare"],
+  "keywords": [
+    "microsoft 365",
+    "documentation",
+    "monitoring",
+    "next.js",
+    "cloudflare"
+  ],
   "author": "",
   "license": "ISC"
 }
