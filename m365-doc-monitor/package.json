@@ -1,0 +1,51 @@
+{
+  "name": "m365-doc-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "worker:dev": "wrangler dev",
+    "build": "next build",
+    "worker:build": "tsc",
+    "start": "next start",
+    "deploy": "wrangler deploy",
+    "worker:deploy": "wrangler deploy",
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-scroll-area": "^1.2.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-switch": "^1.1.2",
+    "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.469.0",
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
+    "@cloudflare/workers-types": "^4.20241230.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.7.2",
+    "vercel": "^39.2.5",
+    "wrangler": "^3.99.0"
+  },
+  "description": "M365 Documentation Monitor - Tracking Microsoft 365 Documentation Changes",
+  "main": "index.js",
+  "keywords": ["microsoft 365", "documentation", "monitoring", "next.js", "cloudflare"],
+  "author": "",
+  "license": "ISC"
+}
