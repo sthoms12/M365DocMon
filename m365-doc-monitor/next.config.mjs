@@ -11,6 +11,11 @@ const nextConfig = {
       ],
     },
   },
+  // Add this to ensure Cloudflare compatibility
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, net: false, tls: false };
+    return config;
+  },
 };
 
 export default nextConfig;
