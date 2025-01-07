@@ -31,25 +31,15 @@
     "zod": "3.24.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "1.13.7",
-    "@cloudflare/workers-types": "4.20241230.0",
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
+    "@cloudflare/next-on-pages": "1.8.2",
+    "@cloudflare/workers-types": "4.20231218.0",
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.46",
     "@types/react-dom": "18.2.18",
     "postcss": "8.4.33",
     "tailwindcss": "3.4.1",
     "typescript": "5.3.3",
     "vercel": "32.3.0",
-    "wrangler": "3.22.1"
-  },
-  "description": "M365 Documentation Monitor - Tracking Microsoft 365 Documentation Changes",
-  "keywords": [
-    "microsoft 365",
-    "documentation",
-    "monitoring",
-    "next.js",
-    "cloudflare"
-  ],
-  "author": "",
-  "license": "ISC"
+    "wrangler": "3.28.2"
+  }
 }
